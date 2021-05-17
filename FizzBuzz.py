@@ -49,7 +49,7 @@ while True:
         else:
          print("Falsch, teilbar durch 5")
     elif x % 3 & x % 5 != 0:
-     if answ == "weiter":
-         print("Richtig")
-     else:
-           print("Falsch, teilbar durch 3 und 5")
+         if answ == "weiter":
+            print("Richtig")
+         else:
+            print("Falsch, teilbar durch 3 und 5")
