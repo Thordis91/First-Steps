@@ -23,33 +23,33 @@ while True:
     answ: str = input("Antwort:\n")
 
 
-    if x % 3 == 0:
+    if x % 3 == 0 and x % 5 == 0:
+        if answ == "FizzBuzz":
+          print("Richtig")
+        else:
+          print("Falsch, weder teilbar durch 3 noch durch 5")
+    elif x % 3 == 0:
         if answ == "Fizz":
           print("Richtig")
         else:
-          print("Falsch, nicht teilbar durch 3")
+          print("Falsch, teilbar durch 3")
     elif x % 5 == 0:
         if answ == "Buzz":
           print("Richtig")
         else:
-          print("Falsch, nicht teilbar durch 5")
-    elif x % 3 & x % 5 == 0:
-        if answ == "FizzBuzz":
-          print("Richtig")
-        else:
-           print("Falsch, weder durch 3 noch 5 teilbar")
-    elif x % 3 != 0:
+           print("Falsch, teilbar durch 5 ")
+    elif x % 3 != 0 and x % 5 != 0:
         if answ == "weiter":
           print("Richtig")
         else:
-          print("Falsch, teilbar durch 3")
+          print("Falsch, weder teilbar durch 3 noch durch 5")
+    elif x % 3 != 0:
+        if answ == "weiter":
+         print("Richtig")
+        else:
+         print("Falsch, nicht teilbar durch 3")
     elif x % 5 != 0:
         if answ == "weiter":
          print("Richtig")
         else:
-         print("Falsch, teilbar durch 5")
-    elif x % 3 & x % 5 != 0:
-         if answ == "weiter":
-            print("Richtig")
-         else:
-            print("Falsch, teilbar durch 3 und 5")
+            print("Falsch, nicht teilbar durch 5")
